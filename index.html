@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Family Book
+        </title>
+    </head>
+    <body>
+        <center>
+        <h1>
+            My Family Book
+        </h1>
+        <img id="intro_pic" height="300" width="200" src="http://prodimage.images-bn.com/pimages/9780316070409_p0_v1_s1200x630.jpg">
+        <h1 id="name">
+
+        </h1>
+        <button id="next" onclick="next()">
+            Click to see First Page
+        </button>
+    </center>
+    <script>
+         function next(){ 
+        family_pic=["https://clipartion.com/wp-content/uploads/2015/11/clip-art-dad.png","https://tse2.mm.bing.net/th?id=OIP.vefNphJj2jdloWlm820jbQHaO0&pid=Api&P=0&w=300&h=300","https://tse3.mm.bing.net/th?id=OIP.fcnYdFGhB4zeUN81D3VtHQHaNA&pid=Api&P=0&w=300&h=300","https://i.pinimg.com/originals/81/64/9e/81649e253f65e1a5b1513584479bd4d3.jpg","https://www.jing.fm/clipimg/detail/21-210067_grandma-clipart-grandma-free-cartoon-granny-clip-art.png"];
+        names=["Dad","Mom","Me","Little Sister","Grandma"];
+        i=0;  
+        document.getElementById("intro_pic").src=family_pic[i];    
+        document.getElementById("name").innerHTML=names[i];
+        i++;   
+        }
+    </script>
+    </body>
+</html>
